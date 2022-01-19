@@ -134,7 +134,7 @@ const Profile = props => {
         },
         value:
           !userDetails.mobile || userDetails.mobile === ''
-            ? 'no mobile number'
+            ? 'No mobile number'
             : userDetails.mobile,
         validation: {
           required: true,

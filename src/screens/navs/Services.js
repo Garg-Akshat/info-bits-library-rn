@@ -16,15 +16,15 @@ const Services = props => {
       about: 'Provide book recommendations maybe in two lines',
       press: () => props.navigation.navigate('cwl'),
     },
-    {
-      title: 'Daily News',
-      about: 'Provide book recommendations maybe in two lines',
-      press: () => props.navigation.navigate('News'),
-    },
-    {
-      title: 'Periodical Finder',
-      about: 'Provide book recommendations maybe in two lines',
-    },
+    // {
+    //   title: 'Daily News',
+    //   about: 'Provide book recommendations maybe in two lines',
+    //   press: () => props.navigation.navigate('News'),
+    // },
+    // {
+    //   title: 'Periodical Finder',
+    //   about: 'Provide book recommendations maybe in two lines',
+    // },
     {
       title: 'Ask For Articles',
       about: 'Provide book recommendations maybe in two lines',

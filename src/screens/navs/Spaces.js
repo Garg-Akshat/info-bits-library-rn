@@ -19,10 +19,10 @@ const Spaces = props => {
       title: 'Group Discussion Room',
       about: 'Provide book recommendations maybe in two lines',
     },
-    {
-      title: 'Periodical Finder',
-      about: 'Provide book recommendations maybe in two lines',
-    },
+    // {
+    //   title: 'Periodical Finder',
+    //   about: 'Provide book recommendations maybe in two lines',
+    // },
     {
       title: 'Innovation Zone',
       about: 'Provide book recommendations maybe in two lines',

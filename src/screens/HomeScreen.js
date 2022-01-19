@@ -139,14 +139,14 @@ const HomeScreen = props => {
               <Profile />
             </Pressable>
           </View>
-          <View style={{marginTop: '6%', marginHorizontal: '8%'}}>
+          {/* <View style={{marginTop: '6%', marginHorizontal: '8%'}}>
             <Text style={{textAlign: 'right'}}>
               “Quote is a good way to fill spaces that can’t be used otherwise”
             </Text>
             <Text style={{textAlign: 'right', fontWeight: 'bold'}}>
               -Harshit
             </Text>
-          </View>
+          </View> */}
         </View>
         <View style={{marginTop: '5%', width: '90%'}}>
           <View style={{display: 'flex', flexDirection: 'row', width: '100%'}}>

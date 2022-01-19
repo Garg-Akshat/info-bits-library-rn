@@ -22,6 +22,8 @@ const Resources = props => {
     {
       title: 'Question Papers',
       about: 'Provide book recommendations maybe in two lines',
+      press: () => props.navigation.navigate('qPaper'),
+
     },
     {
       title: 'Institutional Repository',
