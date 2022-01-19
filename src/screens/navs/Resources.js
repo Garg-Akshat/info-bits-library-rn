@@ -14,10 +14,14 @@ const Resources = props => {
     {
       title: 'Online Catalogue',
       about: 'Provide book recommendations maybe in two lines',
+      press: () => props.navigation.navigate('lCat'),
+
     },
     {
       title: 'Online Databases',
       about: 'Provide book recommendations maybe in two lines',
+      press: () => props.navigation.navigate('oDB'),
+
     },
     {
       title: 'Question Papers',
@@ -32,6 +36,8 @@ const Resources = props => {
     {
       title: 'e-Books',
       about: 'Provide book recommendations maybe in two lines',
+      press: () => props.navigation.navigate('eBook'),
+
     },
     {
       title: 'National Library',

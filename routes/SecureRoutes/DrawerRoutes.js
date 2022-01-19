@@ -7,6 +7,9 @@ import Profile from '../../src/screens/sub/Profile';
 import CwlStack from './stacks/CwlStack';
 import HomeStack from './stacks/HomeStack';
 import Ques from '../../src/screens/sub/resources/ques';
+import LibCat from '../../src/screens/sub/resources/libcat';
+import onlineDB from '../../src/screens/sub/resources/onlineDb';
+import eBook from '../../src/screens/sub/resources/eBook';
 const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = props => (
@@ -23,6 +26,12 @@ const DrawerRoutes = props => (
     <Drawer.Screen name="lnf" component={Lnf}></Drawer.Screen>
     <Drawer.Screen name="Profile" component={Profile}></Drawer.Screen>
     <Drawer.Screen name="qPaper" component={Ques}></Drawer.Screen>
+    <Drawer.Screen name="lCat" component={LibCat}></Drawer.Screen>
+    <Drawer.Screen name="oDB" component={onlineDB}></Drawer.Screen>
+    <Drawer.Screen name="eBook" component={eBook}></Drawer.Screen>
+
+
+
 
 
     <Drawer.Screen name="cwl" component={CwlStack}></Drawer.Screen>
