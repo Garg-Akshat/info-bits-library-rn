@@ -71,7 +71,7 @@ const HomeScreen = props => {
           width: '100%',
         }}>
         <ActivityIndicator size="large" color="#339cde" />
-        <Text style={{marginTop: '2%', fontSize: 18}}>Getting notices...</Text>
+        <Text style={{marginTop: '4%', fontSize: 18}}>Getting notices...</Text>
       </View>
     );
   } else {
@@ -93,12 +93,11 @@ const HomeScreen = props => {
     axios
       .get('apis/notices.php')
       .then(res => {
-        //console.log(res.data.data);
+        console.log(res.data.data);
         setImagesData(objtoarr(res.data.data));
       })
       .catch(err => console.log(err));
   }, []);
-  console.log(noticeEl);
   return (
     <>
       <View style={styles.wrapper}>
@@ -148,7 +147,7 @@ const HomeScreen = props => {
             </Text>
           </View> */}
         </View>
-        <View style={{marginTop: '5%', width: '90%'}}>
+        <View style={{marginTop: '10%', width: '90%'}}>
           <View style={{display: 'flex', flexDirection: 'row', width: '100%'}}>
             <Pressable
               android_ripple={{color: '#bcbcbc'}}
@@ -222,6 +221,7 @@ const HomeScreen = props => {
             </Pressable>
             <Pressable
               android_ripple={{color: '#bcbcbc'}}
+              onPress={() => props.navigation.navigate('Shibboleth')}
               style={{
                 height: 135,
                 width: '47.5%',
@@ -240,7 +240,7 @@ const HomeScreen = props => {
             </Pressable>
           </View>
         </View>
-        <ScrollView style={{marginTop: '4%', width: '100%'}}>
+        <ScrollView style={{marginTop: '5%', width: '100%'}}>
           <Text
             style={{
               fontWeight: '700',
@@ -248,9 +248,9 @@ const HomeScreen = props => {
               textAlign: 'left',
               alignSelf: 'flex-start',
               marginLeft: '5%',
-              marginBottom: '1%',
+              marginBottom: '4%',
             }}>
-            Notifications
+            Notices
           </Text>
           {noticeEl}
         </ScrollView>
@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: 'rgb(86, 188, 252)',
     //transform: [{matrix: [-1, 0.04, 0.04, 1, 0, 0, 0, 0, 0]}],
-    height: '21%',
+    height: '12%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

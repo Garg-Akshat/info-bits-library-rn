@@ -10,6 +10,7 @@ import Ques from '../../src/screens/sub/resources/ques';
 import LibCat from '../../src/screens/sub/resources/libcat';
 import onlineDB from '../../src/screens/sub/resources/onlineDb';
 import eBook from '../../src/screens/sub/resources/eBook';
+import Shibboleth from '../../src/screens/navs/Shibboleth';
 const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = props => (
@@ -29,6 +30,7 @@ const DrawerRoutes = props => (
     <Drawer.Screen name="lCat" component={LibCat}></Drawer.Screen>
     <Drawer.Screen name="oDB" component={onlineDB}></Drawer.Screen>
     <Drawer.Screen name="eBook" component={eBook}></Drawer.Screen>
+    <Drawer.Screen name="Shibboleth" component={Shibboleth}></Drawer.Screen>
 
 
 
